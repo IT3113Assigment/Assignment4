@@ -3,7 +3,7 @@ import '../assets/css/compo.css';
 import {useState,useEffect} from 'react';
 
 export default function AnimalTable(props){
-    const[randomAnimal,setRandomAnimal]=useState[0];
+    const[randomAnimal,setRandomAnimal]=useState(0);
     const[result,setResult]=useState('');
 
     useEffect(()=>{
