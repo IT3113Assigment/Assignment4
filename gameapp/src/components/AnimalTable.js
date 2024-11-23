@@ -34,6 +34,23 @@ export default function AnimalTable(props){
                         <th>Select the animal</th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr>
+                        <td>{result}</td>
+                        <td>{randomAnimal.name}</td>
+                        <td className='animalgrid'>
+                            <div>
+                                <div className='animalgrid'>
+                                    {animals.map((animal)=>(
+                                        <div key={animal.name} className='animalgrid-item'>
+
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
 
         </div>
