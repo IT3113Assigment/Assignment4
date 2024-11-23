@@ -44,7 +44,8 @@ export default function AnimalTable(props){
                                     {animals.map((animal)=>(
                                         <div key={animal.name} className='animalgrid-item'
                                         onClick={()=>handleAnimal(animal.name)}>
-                                                            
+                                         <img src={require ('../assets/fig/${animal.img}')}
+                                         alt={animal.name}/>                   
                                         </div>
                                     ))}
                                 </div>
