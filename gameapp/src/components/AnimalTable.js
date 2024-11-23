@@ -42,8 +42,9 @@ export default function AnimalTable(props){
                             <div>
                                 <div className='animalgrid'>
                                     {animals.map((animal)=>(
-                                        <div key={animal.name} className='animalgrid-item'>
-
+                                        <div key={animal.name} className='animalgrid-item'
+                                        onClick={()=>handleAnimal(animal.name)}>
+                                                            
                                         </div>
                                     ))}
                                 </div>
