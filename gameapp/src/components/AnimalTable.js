@@ -20,6 +20,9 @@ export default function AnimalTable(props){
         }else{
             setResult('LOSE');
         }
+        setTimeout(() => {
+            generateAnimal(); 
+          }, 1000);
     };
     return(
         <div className='gameContainer'>
@@ -44,7 +47,7 @@ export default function AnimalTable(props){
                                     {animals.map((animal)=>(
                                         <div key={animal.name} className='animalgrid-item'
                                         onClick={()=>handleAnimal(animal.name)}>
-                                         <img src={require ('../assets/fig/${animal.img}')}
+                                         <img src={require (`../assets/fig/${animal.img}`)}
                                          alt={animal.name}/>                   
                                         </div>
                                     ))}
