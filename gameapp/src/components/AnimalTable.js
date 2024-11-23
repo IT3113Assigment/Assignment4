@@ -20,5 +20,22 @@ export default function AnimalTable(props){
         }else{
             setResult('LOSE');
         }
-    }
+    };
+    return(
+        <div className='gameContainer'>
+            <table className='game-table'>
+                <thead>
+                    <tr>
+                    <th colSpan={3}><h1>ANIMAL MATCHING GAME</h1></th>
+                    </tr>
+                    <tr>
+                        <th>Result</th>
+                        <th>Animal Name</th>
+                        <th>Select the animal</th>
+                    </tr>
+                </thead>
+            </table>
+
+        </div>
+    );
 }
